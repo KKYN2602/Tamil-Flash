@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Alphabets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=9j3qBowa"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .tamil {
+            font-weight: bold;
+            font-size: 20px;
+            color: darkblue;
+            cursor: pointer;
+        }
+
+        .tamil:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tamil Alphabets</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> </th> <!-- Empty for consonants column -->
+                    {% for vowel in vowels %}
+                    <th>{{ vowel }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for consonant, row in data.items() %}
+                <tr>
+                    <td class="tamil" onclick="responsiveVoice.speak('{{ consonant }}', 'Tamil Male');">
+                        {{ consonant }}
+                    </td>
+                    {% for letter in row %}
+                    <td class="tamil" onclick="responsiveVoice.speak('{{ letter }}', 'Tamil Male');">
+                        {{ letter }}
+                    </td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

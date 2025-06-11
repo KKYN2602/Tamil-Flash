@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}My Account - TamilFlash{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{{ user.profile_image_url or url_for('static', filename='img/default_profile.png') }}"
+                class="img-fluid rounded-circle mb-3" style="max-width: 150px;" alt="Profile Picture">
+
+            <h3>{{ user.username }}</h3>
+            <p class="text-muted">{{ user.email }}</p>
+            <p>Member since: {{ user.join_date.strftime('%B %d, %Y') }}</p>
+
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm mt-2">Logout</a>
+            <form method="POST" action="{{ url_for('delete_account') }}" class="mt-2"
+                onsubmit="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
+                <button type="submit" class="btn btn-danger btn-sm">Delete Account</button>
+            </form>
+        </div>
+
+        <div class="col-md-8">
+            <h4>Progress</h4>
+            <div class="progress mb-3" style="height: 20px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: {{ user.progress }}%;"
+                    aria-valuenow="{{ user.progress }}" aria-valuemin="0" aria-valuemax="100">
+                    {{ user.progress }}%
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🔥 Daily Streak</h5>
+                            <p class="card-text fs-4">{{ user.streak }} days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🏆 XP Points</h5>
+                            <p class="card-text fs-4">{{ user.xp }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Achievements</h4>
+            {% if user.badges %}
+            <ul class="list-group mb-4">
+                {% for badge in user.badges %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    {{ badge.name }}
+                    <span class="badge bg-primary rounded-pill">{{ badge.description }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No achievements yet.</p>
+            {% endif %}
+
+            <h4>Recent Activity</h4>
+            {% if user.activities %}
+            <ul class="list-group mb-4">
+                {% for activity in user.activities %}
+                <li class="list-group-item">{{ activity }}</li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No recent activity.</p>
+            {% endif %}
+
+            <h4>Update Profile</h4>
+            <form method="POST" action="{{ url_for('update_account') }}">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" value="{{ user.username }}">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" value="{{ user.email }}">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

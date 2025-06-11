@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Tamil with Tamil Flash - A comprehensive language learning tool">
+    <meta name="author" content="Tamil Flash Team">
+    <title>Tamil Flash</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600,700" rel="stylesheet">
+    {{ bootstrap.load_css() }}
+
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90vw;
+            max-width: 1000px;
+            background: #fff9f2;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6f61;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .intro {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        nav ul li {
+            margin: 8px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            background-color: #ffb347;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.3s;
+            font-size: 1em;
+        }
+
+        .nav-link:hover {
+            background-color: #ff6f61;
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .leaderboard-link {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 16px;
+            font-size: 1.1em;
+            background-color: #84fab0;
+            color: #000;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .leaderboard-link:hover {
+            background-color: #8fd3f4;
+            color: #222;
+        }
+
+        .profile-section {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .profile-btn {
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 2em;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .profile-btn:hover {
+            transform: scale(1.1);
+            color: #ff6f61;
+        }
+
+        .profile-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #fff9f2;
+            min-width: 150px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: 600;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ffecd2;
+            color: #ff6f61;
+        }
+
+        .profile-dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-section">
+        <div class="profile-dropdown">
+            <button class="profile-btn">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('account') }}">Account Details</a>
+                <a href="{{ url_for('logout') }}">Sign Out</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="my-4">Welcome to Tamil Flash</h1>
+        <p class="intro mb-4">
+            Explore the rich language of Tamil through various modules designed to enhance your learning experience.
+            Choose a module from the menu below to get started!
+        </p>
+
+        <img src="{{ url_for('static', filename='images/tamil.jpg') }}" alt="Tamil Flash Logo" width="200">
+
+        <!-- Kural of the Day Widget -->
+        <h2 style="color: #ff6f61; font-size: 1.6em; margin-top: 30px;">📜 Kural of the Day</h2>
+        <iframe src="{{ url_for('kural_of_the_day') }}" width="100%" height="400" frameborder="0"
+            style="border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+        </iframe>
+
+        <nav>
+            <ul class="nav justify-content-center mt-4 flex-wrap">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('alphabets') }}">Alphabets</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('numbers') }}">Numbers</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('family') }}">Family Names</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('common_phrases') }}">Common Phrases</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('colors') }}">Colors</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('times_day') }}">Time and Date</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('map') }}">Tamil Nadu Map</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('translate') }}">Translator</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('flashcard') }}">Flashcards</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('quiz') }}">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('pronunciation') }}">Pronunciation Checker</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('voice_assistant') }}">Voice Assistant</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('writing_pad') }}">Drawing Practice</a></li>
+            </ul>
+        </nav>
+
+        <a class="leaderboard-link" href="{{ url_for('leaderboard') }}">
+            🏆 View Leaderboard
+        </a>
+
+        <div class="content"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Route Details</title>
+</head>
+
+<body>
+    <h1>Route Details</h1>
+    <p><strong>Route Number:</strong> {{ details['route_number'] }}</p>
+    <p><strong>Origin:</strong> {{ details['origin'] }}</p>
+    <p><strong>Destination:</strong> {{ details['destination'] }}</p>
+    <h2>Stops:</h2>
+    <ul>
+        {% for stop in details['stops'] %}
+        <li>{{ stop }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/bus-routes">Go Back</a>
+</body>
+
+</html>

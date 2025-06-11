@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Cultural Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .info-card {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            width: 250px;
+            display: none;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+        }
+
+        .audio-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .audio-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map-container">
+        <!-- Placeholder SVG Map - Replace with detailed SVG -->
+        <svg viewBox="0 0 200 200">
+            <circle cx="60" cy="100" r="20" fill="#cce5ff" onclick="showInfo('Madurai')" />
+            <text x="55" y="105" font-size="8">Madurai</text>
+            <circle cx="140" cy="60" r="20" fill="#ffcccb" onclick="showInfo('Chennai')" />
+            <text x="135" y="65" font-size="8">Chennai</text>
+        </svg>
+
+        <div class="info-card" id="infoCard">
+            <h3 id="cityName">City</h3>
+            <p id="culturalInfo">Details here</p>
+            <p><strong>Local Phrase:</strong> <span id="localPhrase"></span></p>
+            <button class="audio-btn" onclick="playAudio()">🔊 Play Pronunciation</button>
+            <audio id="audioPlayer" src=""></audio>
+        </div>
+    </div>
+
+    <script>
+        const cityData = {
+            'Madurai': {
+                name: 'Madurai | மதுரை',
+                info: 'Known as the Temple City for the Meenakshi Amman Temple.',
+                phrase: 'வணக்கம் அண்ணா',
+                audio: '/static/audio/madurai.mp3'
+            },
+            'Chennai': {
+                name: 'Chennai | சென்னை',
+                info: 'Capital city of Tamil Nadu, known for Marina Beach and Kollywood.',
+                phrase: 'எப்படி இருக்கீங்க?',
+                audio: '/static/audio/chennai.mp3'
+            }
+        };
+
+        function showInfo(city) {
+            const card = document.getElementById('infoCard');
+            const data = cityData[city];
+            document.getElementById('cityName').textContent = data.name;
+            document.getElementById('culturalInfo').textContent = data.info;
+            document.getElementById('localPhrase').textContent = data.phrase;
+            document.getElementById('audioPlayer').src = data.audio;
+            card.style.display = 'block';
+        }
+
+        function playAudio() {
+            const player = document.getElementById('audioPlayer');
+            player.play();
+        }
+    </script>
+</body>
+
+</html>

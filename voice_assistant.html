@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tamil Voice Assistant</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_API_KEY"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tamil Voice Assistant</h2>
+        <p>Click the button and speak in English.</p>
+        <button onclick="startListening()">🎤 Start Speaking</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function startListening() {
+            const recognition = new webkitSpeechRecognition();
+            recognition.lang = 'en-US';
+            recognition.start();
+
+            recognition.onresult = function (event) {
+                const spokenText = event.results[0][0].transcript;
+                document.getElementById("output").innerText = "You said: " + spokenText;
+
+                fetch("/get_tamil_response", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ text: spokenText })
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        const tamilResponse = data.response;
+                        document.getElementById("output").innerText += "\nBot: " + tamilResponse;
+
+                        responsiveVoice.speak(tamilResponse, "Tamil Male");
+                    });
+            };
+        }
+    </script>
+</body>
+
+</html>

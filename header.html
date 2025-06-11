@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Tamil with Tamil Flash - A comprehensive language learning tool">
+    <meta name="author" content="Tamil Flash Team">
+    <title>Tamil Flash</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600,700" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tamil Flash</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('alphabets') }}">Alphabets</a></li>
+                <li><a href="{{ url_for('numbers') }}">Numbers</a></li>
+                <li><a href="{{ url_for('common_phrases') }}">Common Phrases</a></li>
+                <li><a href="{{ url_for('colors') }}">Colors</a></li>
+                <li><a href="{{ url_for('times_day') }}">Time and Date</a></li>
+                <li><a href="{{ url_for('map') }}">Tamil Nadu Map</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <!-- Your content here -->
+        </div>
+    </div>
+</body>
+
+</html>

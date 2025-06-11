@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Leaderboard - Tamil Flash{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">🏆 Leaderboard</h2>
+
+    <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search for a username...">
+
+    <div class="table-responsive">
+        <table class="table table-dark table-striped table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Streak</th>
+                    <th>Badge</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr {% if current_user and user.id==current_user.id %}class="table-success" {% endif %}>
+                    <td>{{ loop.index }}</td>
+                    <td>
+                        <img src="https://ui-avatars.com/api/?name={{ user.username }}&background=0D8ABC&color=fff"
+                            class="rounded-circle me-2" width="30" alt="Avatar">
+                        {{ user.username }}
+                    </td>
+                    <td title="Last login: {{ user.last_login.strftime('%Y-%m-%d %H:%M:%S') }}">{{ user.streak }}</td>
+                    <td>
+                        {% if user.streak >= 30 %}
+                        🥇
+                        {% elif user.streak >= 15 %}
+                        🥈
+                        {% elif user.streak >= 7 %}
+                        🥉
+                        {% else %}
+                        🔰
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    document.getElementById('searchInput').addEventListener('keyup', function () {
+        const filter = this.value.toLowerCase();
+        document.querySelectorAll('tbody tr').forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(filter) ? '' : 'none';
+        });
+    });
+</script>
+{% endblock %}

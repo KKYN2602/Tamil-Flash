@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome, {{ user.username }}!</h1>
+    </header>
+
+    <section class="streak-box">
+        <h2>🔥 Daily Streak: {{ user.streak }} days</h2>
+        {% if user.streak > 5 %}
+        <p>🎉 Keep going! You're on fire!</p>
+        {% elif user.streak > 0 %}
+        <p>⭐ Great job! Come back tomorrow to continue your streak.</p>
+        {% else %}
+        <p>Start a streak by practicing daily!</p>
+        {% endif %}
+    </section>
+
+    <section class="dashboard-links">
+        <h3>Learning Sections</h3>
+        <ul>
+            <li><a href="{{ url_for('alphabets') }}">📖 Learn Alphabets</a></li>
+            <li><a href="{{ url_for('numbers') }}">🔢 Learn Numbers</a></li>
+            <li><a href="{{ url_for('colors') }}">🎨 Learn Colors</a></li>
+            <li><a href="{{ url_for('common_phrases') }}">💬 Common Phrases</a></li>
+            <li><a href="{{ url_for('flashcard') }}">🃏 Flashcards</a></li>
+            <li><a href="{{ url_for('translate') }}">🌎 Translator</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TamilFlash. Keep learning!</p>
+    </footer>
+</body>
+
+</html>

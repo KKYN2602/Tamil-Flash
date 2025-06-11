@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+
+<body>
+    <h1>Tamil Quiz</h1>
+    <form method="POST" action="{{ url_for('quiz') }}">
+        {% for question in questions %}
+        {% set q_index = loop.index0 %}
+        <div class="question-block">
+            <p><strong>Q{{ loop.index }}. {{ question.question }}</strong></p>
+            {% for option in question.options %}
+            <label>
+                <input type="radio" name="q{{ q_index }}" value="{{ option }}" required>
+                {{ option }}
+            </label><br>
+            {% endfor %}
+        </div>
+        <hr>
+        {% endfor %}
+        <input type="submit" value="Submit Quiz">
+    </form>
+</body>
+
+</html>

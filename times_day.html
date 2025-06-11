@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Time and Days</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Time in Tamil</h1>
+        <h2>O'Clock</h2>
+        <p>1:00 - {{ time.o_clock.one_o_clock }}</p>
+        <p>2:00 - {{ time.o_clock.two_o_clock }}</p>
+        <p>11:00 - {{ time.o_clock.eleven_o_clock }}</p>
+
+        <h2>Quarter and Half Past</h2>
+        <p>Quarter Past - {{ time.quarter.quarter_past }}</p>
+        <p>Three-Quarters Past - {{ time.quarter.three_quarters_past }}</p>
+        <p>Half Past - {{ time.half_past }}</p>
+
+        <h2>Exact Time</h2>
+        <p>Example 1: {{ time.exact_time.example_1 }}</p>
+        <p>Example 2: {{ time.exact_time.example_2 }}</p>
+        <p>Minute - {{ time.minute }}</p>
+
+        <h1>Days of the Week</h1>
+        <ul>
+            {% for day in days.days %}
+            <li>{{ day.name }} - {{ day.with_suffix }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+
+</html>

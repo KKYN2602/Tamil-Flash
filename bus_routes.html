@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bus Routes</title>
+</head>
+
+<body>
+    <h1>Chennai Bus Routes</h1>
+    <form method="POST" action="/bus-routes">
+        <label for="route">Select Route:</label>
+        <select name="route" id="route">
+            {% for route in routes %}
+            <option value="{{ route }}">{{ route }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Get Details</button>
+    </form>
+</body>
+
+</html>

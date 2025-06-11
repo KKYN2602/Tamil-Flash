@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Kural of the Day{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center; color: #b33;">📜 Kural of the Day</h2>
+
+<!-- Wrapper -->
+<div id="kural-box"
+    style="width: fit-content; margin: auto; text-align: center; padding: 1rem; border-radius: 12px; transition: all 0.4s ease; background-color: transparent;">
+
+    <!-- Kural line -->
+    <h3 id="kural-line" style="cursor: pointer; font-size: 1.8rem;" onclick="toggleKuralDetails()">
+        {{ kural.tamil }}
+    </h3>
+
+    <!-- Hidden details -->
+    <div id="kural-details" style="max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease;">
+        <p><strong>English Meaning:</strong> {{ kural.english }}</p>
+        <p><strong>Explanation:</strong> {{ kural.explanation }}</p>
+        <p><em>Modern Interpretation:</em> {{ kural.modern_interpretation }}</p>
+    </div>
+</div>
+
+<!-- JavaScript for toggling -->
+<script>
+    function toggleKuralDetails() {
+        const details = document.getElementById("kural-details");
+        if (details.style.maxHeight === "0px" || details.style.maxHeight === "") {
+            details.style.maxHeight = "500px"; // enough space for content
+            details.style.opacity = "1";
+        } else {
+            details.style.maxHeight = "0";
+            details.style.opacity = "0";
+        }
+    }
+</script>
+{% endblock %}

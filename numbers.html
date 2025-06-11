@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tamil Numbers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tamil Numbers</h1>
+        <div id="numbers">
+            {% for number in data %}
+            <p>{{ number.english }} - <strong>{{ number.tamil }}</strong></p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

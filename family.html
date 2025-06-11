@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Family Names</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=9j3qBowa"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Names</h1>
+        <div id="alphabets">
+            {% for letter in data %}
+            <p>{{ letter.english }} - <strong>{{ letter.tamil }}</strong>
+                <button onclick="responsiveVoice.speak('{{ letter.tamil }}', 'Tamil Male');">Hear Pronunciation</button>
+            </p>
+
+            {% endfor %}
+        </div>
+</body>
+
+</html>

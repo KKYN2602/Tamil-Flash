@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Tamil Phrases</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Day-to-Day Tamil Phrases</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th>Tamil</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for phrase in common_phrases %}
+                <tr>
+                    <td>{{ phrase.english }}</td>
+                    <td>{{ phrase.tamil }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
