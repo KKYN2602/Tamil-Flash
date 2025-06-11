@@ -1,0 +1,158 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85vw;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    margin: 20px auto;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 8px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffdd57;
+}
+
+h1 {
+    color: #ffdd57;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 8px rgba(255, 221, 87, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffdd57;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6c84f;
+}
+
+#alphabets table {
+    width: auto;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#alphabets th,
+#alphabets td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#alphabets th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#alphabets .tamil {
+    font-size: 20px;
+    font-weight: bold;
+    color: #80d8ff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#alphabets .tamil:hover {
+    color: #ff5252;
+}
+
+.leaderboard-link {
+    display: block;
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.leaderboard-link:hover {
+    text-decoration: underline;
+    color: #ffd740;
+}
