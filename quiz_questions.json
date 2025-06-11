@@ -1,0 +1,281 @@
+[
+    {
+        "question": "What is the Tamil word for 'Water'?",
+        "options": [
+            "தண்ணீர்",
+            "அண்ணா",
+            "வண்டி"
+        ],
+        "answer": "தண்ணீர்"
+    },
+    {
+        "question": "How do you say 'Mother' in Tamil?",
+        "options": [
+            "அம்மா",
+            "தந்தை",
+            "சகோதரி"
+        ],
+        "answer": "அம்மா"
+    },
+    {
+        "question": "Which one means 'Book' in Tamil?",
+        "options": [
+            "புத்தகம்",
+            "மரம்",
+            "வீடு"
+        ],
+        "answer": "புத்தகம்"
+    },
+    {
+        "question": "What is the Tamil word for 'Father'?",
+        "options": [
+            "தந்தை",
+            "அம்மா",
+            "மாமா"
+        ],
+        "answer": "தந்தை"
+    },
+    {
+        "question": "How do you say 'House' in Tamil?",
+        "options": [
+            "வீடு",
+            "மரம்",
+            "பள்ளி"
+        ],
+        "answer": "வீடு"
+    },
+    {
+        "question": "Which word means 'Tree' in Tamil?",
+        "options": [
+            "மரம்",
+            "மாடு",
+            "நாய்"
+        ],
+        "answer": "மரம்"
+    },
+    {
+        "question": "What is the Tamil word for 'School'?",
+        "options": [
+            "பள்ளி",
+            "மரம்",
+            "மாமா"
+        ],
+        "answer": "பள்ளி"
+    },
+    {
+        "question": "How do you say 'Sister' in Tamil?",
+        "options": [
+            "சகோதரி",
+            "தம்பி",
+            "அப்பா"
+        ],
+        "answer": "சகோதரி"
+    },
+    {
+        "question": "Which one means 'Car' in Tamil?",
+        "options": [
+            "வண்டி",
+            "மரம்",
+            "பூ"
+        ],
+        "answer": "வண்டி"
+    },
+    {
+        "question": "What is the Tamil word for 'Dog'?",
+        "options": [
+            "நாய்",
+            "மாடு",
+            "எலி"
+        ],
+        "answer": "நாய்"
+    },
+    {
+        "question": "How do you say 'Cat' in Tamil?",
+        "options": [
+            "பூனை",
+            "மாடு",
+            "நாய்"
+        ],
+        "answer": "பூனை"
+    },
+    {
+        "question": "What is the Tamil word for 'Milk'?",
+        "options": [
+            "பால்",
+            "தண்ணீர்",
+            "சாறு"
+        ],
+        "answer": "பால்"
+    },
+    {
+        "question": "Which one means 'Friend' in Tamil?",
+        "options": [
+            "நண்பன்",
+            "வண்டி",
+            "பள்ளி"
+        ],
+        "answer": "நண்பன்"
+    },
+    {
+        "question": "How do you say 'Brother' in Tamil?",
+        "options": [
+            "தம்பி",
+            "அக்கா",
+            "அப்பா"
+        ],
+        "answer": "தம்பி"
+    },
+    {
+        "question": "What is the Tamil word for 'Food'?",
+        "options": [
+            "சாப்பாடு",
+            "தண்ணீர்",
+            "மாமிசம்"
+        ],
+        "answer": "சாப்பாடு"
+    },
+    {
+        "question": "Which word means 'Pen' in Tamil?",
+        "options": [
+            "பேனா",
+            "நூல்",
+            "கோலம்"
+        ],
+        "answer": "பேனா"
+    },
+    {
+        "question": "What is the Tamil word for 'Book'?",
+        "options": [
+            "புத்தகம்",
+            "வண்டி",
+            "நாய்"
+        ],
+        "answer": "புத்தகம்"
+    },
+    {
+        "question": "Which one means 'Sun' in Tamil?",
+        "options": [
+            "சூரியன்",
+            "மாதிரி",
+            "நதி"
+        ],
+        "answer": "சூரியன்"
+    },
+    {
+        "question": "How do you say 'Moon' in Tamil?",
+        "options": [
+            "சந்திரன்",
+            "வானம்",
+            "நதி"
+        ],
+        "answer": "சந்திரன்"
+    },
+    {
+        "question": "What is the Tamil word for 'Sky'?",
+        "options": [
+            "வானம்",
+            "மரம்",
+            "நதி"
+        ],
+        "answer": "வானம்"
+    },
+    {
+        "question": "Which one means 'River' in Tamil?",
+        "options": [
+            "நதி",
+            "நெய்",
+            "மாமிசம்"
+        ],
+        "answer": "நதி"
+    },
+    {
+        "question": "How do you say 'Child' in Tamil?",
+        "options": [
+            "குழந்தை",
+            "பிள்ளை",
+            "மகன்"
+        ],
+        "answer": "குழந்தை"
+    },
+    {
+        "question": "What is the Tamil word for 'Color'?",
+        "options": [
+            "நிறம்",
+            "வண்ணம்",
+            "ஒலி"
+        ],
+        "answer": "நிறம்"
+    },
+    {
+        "question": "Which one means 'Yellow' in Tamil?",
+        "options": [
+            "மஞ்சள்",
+            "சிவப்பு",
+            "பச்சை"
+        ],
+        "answer": "மஞ்சள்"
+    },
+    {
+        "question": "How do you say 'Green' in Tamil?",
+        "options": [
+            "பச்சை",
+            "நீலம்",
+            "கருப்பு"
+        ],
+        "answer": "பச்சை"
+    },
+    {
+        "question": "What is the Tamil word for 'Black'?",
+        "options": [
+            "கருப்பு",
+            "வெள்ளை",
+            "சிவப்பு"
+        ],
+        "answer": "கருப்பு"
+    },
+    {
+        "question": "Which one means 'White' in Tamil?",
+        "options": [
+            "வெள்ளை",
+            "பச்சை",
+            "சாம்பல்"
+        ],
+        "answer": "வெள்ளை"
+    },
+    {
+        "question": "How do you say 'Red' in Tamil?",
+        "options": [
+            "சிவப்பு",
+            "மஞ்சள்",
+            "பச்சை"
+        ],
+        "answer": "சிவப்பு"
+    },
+    {
+        "question": "What is the Tamil word for 'One'?",
+        "options": [
+            "ஒன்று",
+            "இரண்டு",
+            "மூன்று"
+        ],
+        "answer": "ஒன்று"
+    },
+    {
+        "question": "Which one means 'Ten' in Tamil?",
+        "options": [
+            "பத்து",
+            "ஓர்",
+            "ஐந்து"
+        ],
+        "answer": "பத்து"
+    },
+    {
+        "question": "How do you say 'Thank you' in Tamil?",
+        "options": [
+            "நன்றி",
+            "வணக்கம்",
+            "மன்னிக்கவும்"
+        ],
+        "answer": "நன்றி"
+    }
+]
