@@ -1,0 +1,54 @@
+{
+    "colors": [
+        {
+            "name": "Red",
+            "tamil": "சிவப்பு(sivapu)",
+            "image": "static/images/red.png"
+        },
+        {
+            "name": "Blue",
+            "tamil": "நீலம்(neelam)",
+            "image": "static/images/blue.png"
+        },
+        {
+            "name": "Green",
+            "tamil": "பச்சை(pachai)",
+            "image": "static/images/green.png"
+        },
+        {
+            "name": "Yellow",
+            "tamil": "மஞ்சள்(manjal)",
+            "image": "static/images/yellow.png"
+        },
+        {
+            "name": "Black",
+            "tamil": "கருப்பு(karupu)",
+            "image": "static/images/black.jpg"
+        },
+        {
+            "name": "White",
+            "tamil": "வெள்ளை(vellai)",
+            "image": "static/images/white.jpg"
+        },
+        {
+            "name": "Orange",
+            "tamil": "ஆரஞ்சு(orange)",
+            "image": "static/images/orange.png"
+        },
+        {
+            "name": "Purple",
+            "tamil": "ஊதா(oodha)",
+            "image": "static/images/purple.png"
+        },
+        {
+            "name": "Pink",
+            "tamil": "இளஞ்சிவப்பு(ilansivapu)",
+            "image": "static/images/pink.jpg"
+        },
+        {
+            "name": "Brown",
+            "tamil": "பழுப்பு(palupu)",
+            "image": "static/images/brown.png"
+        }
+    ]
+}

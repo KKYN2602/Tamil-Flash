@@ -1,0 +1,70 @@
+[
+    {
+        "english": "Hello",
+        "tamil": "வணக்கம் (Vanakkam)"
+    },
+    {
+        "english": "Thank you",
+        "tamil": "நன்றி (Nandri)"
+    },
+    {
+        "english": "How are you?",
+        "tamil": "நீங்கள் எப்படி இருக்கிறீர்கள்? (Neenga epadi irukkirenga?)"
+    },
+    {
+        "english": "Good morning",
+        "tamil": "காலை வணக்கம் (Kaalaivannakkam)"
+    },
+    {
+        "english": "Good night",
+        "tamil": "இரவு வணக்கம் (Iravu Vannakkam)"
+    },
+    {
+        "english": "Please",
+        "tamil": "தயவு செய்து (Thayavu seithu)"
+    },
+    {
+        "english": "Sorry",
+        "tamil": "மன்னிக்கவும் (Mannikkavum)"
+    },
+    {
+        "english": "Yes",
+        "tamil": "ஆமாம் (Aamām)"
+    },
+    {
+        "english": "No",
+        "tamil": "இல்லை (Illai)"
+    },
+    {
+        "english": "What is your name?",
+        "tamil": "உங்கள் பெயர் என்ன? (Ungal peyar enna?)"
+    },
+    {
+        "english": "My name is...",
+        "tamil": "என் பெயர்... (En peyar...)"
+    },
+    {
+        "english": "I don't understand",
+        "tamil": "எனக்கு புரியவில்லை (Enakku puriyavillai)"
+    },
+    {
+        "english": "Can you help me?",
+        "tamil": "நீங்கள் எனக்கு உதவ முடியுமா? (Neenga enakku uthava mudiyuma?)"
+    },
+    {
+        "english": "Where is the restroom?",
+        "tamil": "கழிப்பறை எங்கு உள்ளது? (Kaliparai enga ulladhu?)"
+    },
+    {
+        "english": "I am hungry",
+        "tamil": "எனக்கு பசிக்கிறது (Enakku pasikkiradhu)"
+    },
+    {
+        "english": "I am tired",
+        "tamil": "எனக்கு அலங்கடாக உள்ளது (Enakku alankadāka ulladhu)"
+    },
+    {
+        "english": "Help!",
+        "tamil": "உதவி! (Uthavi!)"
+    }
+]

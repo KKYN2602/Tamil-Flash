@@ -1,0 +1,866 @@
+[
+    {
+        "english": "Ka",
+        "tamil": "க"
+    },
+    {
+        "english": "Ka + A",
+        "tamil": "கா"
+    },
+    {
+        "english": "Ka + I",
+        "tamil": "கி"
+    },
+    {
+        "english": "Ka + II",
+        "tamil": "கீ"
+    },
+    {
+        "english": "Ka + U",
+        "tamil": "கு"
+    },
+    {
+        "english": "Ka + UU",
+        "tamil": "கூ"
+    },
+    {
+        "english": "Ka + E",
+        "tamil": "கெ"
+    },
+    {
+        "english": "Ka + EE",
+        "tamil": "கே"
+    },
+    {
+        "english": "Ka + AI",
+        "tamil": "கை"
+    },
+    {
+        "english": "Ka + O",
+        "tamil": "கொ"
+    },
+    {
+        "english": "Ka + OO",
+        "tamil": "கோ"
+    },
+    {
+        "english": "Ka + AU",
+        "tamil": "கௌ"
+    },
+    {
+        "english": "Nga",
+        "tamil": "ங"
+    },
+    {
+        "english": "Nga + A",
+        "tamil": "ஙா"
+    },
+    {
+        "english": "Nga + I",
+        "tamil": "ஙி"
+    },
+    {
+        "english": "Nga + II",
+        "tamil": "ஙீ"
+    },
+    {
+        "english": "Nga + U",
+        "tamil": "ஙு"
+    },
+    {
+        "english": "Nga + UU",
+        "tamil": "ஙூ"
+    },
+    {
+        "english": "Nga + E",
+        "tamil": "ஙெ"
+    },
+    {
+        "english": "Nga + EE",
+        "tamil": "ஙே"
+    },
+    {
+        "english": "Nga + AI",
+        "tamil": "ஙை"
+    },
+    {
+        "english": "Nga + O",
+        "tamil": "ஙொ"
+    },
+    {
+        "english": "Nga + OO",
+        "tamil": "ஙோ"
+    },
+    {
+        "english": "Nga + AU",
+        "tamil": "ஙௌ"
+    },
+    {
+        "english": "Cha",
+        "tamil": "ச"
+    },
+    {
+        "english": "Cha + A",
+        "tamil": "சா"
+    },
+    {
+        "english": "Cha + I",
+        "tamil": "சி"
+    },
+    {
+        "english": "Cha + II",
+        "tamil": "சீ"
+    },
+    {
+        "english": "Cha + U",
+        "tamil": "சு"
+    },
+    {
+        "english": "Cha + UU",
+        "tamil": "சூ"
+    },
+    {
+        "english": "Cha + E",
+        "tamil": "செ"
+    },
+    {
+        "english": "Cha + EE",
+        "tamil": "சே"
+    },
+    {
+        "english": "Cha + AI",
+        "tamil": "சை"
+    },
+    {
+        "english": "Cha + O",
+        "tamil": "சொ"
+    },
+    {
+        "english": "Cha + OO",
+        "tamil": "சோ"
+    },
+    {
+        "english": "Cha + AU",
+        "tamil": "சௌ"
+    },
+    {
+        "english": "Nya",
+        "tamil": "ஞ"
+    },
+    {
+        "english": "Nya + A",
+        "tamil": "ஞா"
+    },
+    {
+        "english": "Nya + I",
+        "tamil": "ஞி"
+    },
+    {
+        "english": "Nya + II",
+        "tamil": "ஞீ"
+    },
+    {
+        "english": "Nya + U",
+        "tamil": "ஞு"
+    },
+    {
+        "english": "Nya + UU",
+        "tamil": "ஞூ"
+    },
+    {
+        "english": "Nya + E",
+        "tamil": "ஞெ"
+    },
+    {
+        "english": "Nya + EE",
+        "tamil": "ஞே"
+    },
+    {
+        "english": "Nya + AI",
+        "tamil": "ஞை"
+    },
+    {
+        "english": "Nya + O",
+        "tamil": "ஞொ"
+    },
+    {
+        "english": "Nya + OO",
+        "tamil": "ஞோ"
+    },
+    {
+        "english": "Nya + AU",
+        "tamil": "ஞௌ"
+    },
+    {
+        "english": "Ta",
+        "tamil": "ட"
+    },
+    {
+        "english": "Ta + A",
+        "tamil": "டா"
+    },
+    {
+        "english": "Ta + I",
+        "tamil": "டி"
+    },
+    {
+        "english": "Ta + II",
+        "tamil": "டீ"
+    },
+    {
+        "english": "Ta + U",
+        "tamil": "டு"
+    },
+    {
+        "english": "Ta + UU",
+        "tamil": "டூ"
+    },
+    {
+        "english": "Ta + E",
+        "tamil": "டெ"
+    },
+    {
+        "english": "Ta + EE",
+        "tamil": "டே"
+    },
+    {
+        "english": "Ta + AI",
+        "tamil": "டை"
+    },
+    {
+        "english": "Ta + O",
+        "tamil": "டொ"
+    },
+    {
+        "english": "Ta + OO",
+        "tamil": "டோ"
+    },
+    {
+        "english": "Ta + AU",
+        "tamil": "டௌ"
+    },
+    {
+        "english": "Ṇa",
+        "tamil": "ண"
+    },
+    {
+        "english": "Ṇa + A",
+        "tamil": "ணா"
+    },
+    {
+        "english": "Ṇa + I",
+        "tamil": "ணி"
+    },
+    {
+        "english": "Ṇa + II",
+        "tamil": "ணீ"
+    },
+    {
+        "english": "Ṇa + U",
+        "tamil": "ணு"
+    },
+    {
+        "english": "Ṇa + UU",
+        "tamil": "ணூ"
+    },
+    {
+        "english": "Ṇa + E",
+        "tamil": "ணெ"
+    },
+    {
+        "english": "Ṇa + EE",
+        "tamil": "ணே"
+    },
+    {
+        "english": "Ṇa + AI",
+        "tamil": "ணை"
+    },
+    {
+        "english": "Ṇa + O",
+        "tamil": "ணொ"
+    },
+    {
+        "english": "Ṇa + OO",
+        "tamil": "ணோ"
+    },
+    {
+        "english": "Ṇa + AU",
+        "tamil": "ணௌ"
+    },
+    {
+        "english": "Ta",
+        "tamil": "த"
+    },
+    {
+        "english": "Ta + A",
+        "tamil": "தா"
+    },
+    {
+        "english": "Ta + I",
+        "tamil": "தி"
+    },
+    {
+        "english": "Ta + II",
+        "tamil": "தீ"
+    },
+    {
+        "english": "Ta + U",
+        "tamil": "து"
+    },
+    {
+        "english": "Ta + UU",
+        "tamil": "தூ"
+    },
+    {
+        "english": "Ta + E",
+        "tamil": "தெ"
+    },
+    {
+        "english": "Ta + EE",
+        "tamil": "தே"
+    },
+    {
+        "english": "Ta + AI",
+        "tamil": "தை"
+    },
+    {
+        "english": "Ta + O",
+        "tamil": "தொ"
+    },
+    {
+        "english": "Ta + OO",
+        "tamil": "தோ"
+    },
+    {
+        "english": "Ta + AU",
+        "tamil": "தௌ"
+    },
+    {
+        "english": "Na",
+        "tamil": "ந"
+    },
+    {
+        "english": "Na + A",
+        "tamil": "நா"
+    },
+    {
+        "english": "Na + I",
+        "tamil": "நி"
+    },
+    {
+        "english": "Na + II",
+        "tamil": "நீ"
+    },
+    {
+        "english": "Na + U",
+        "tamil": "நு"
+    },
+    {
+        "english": "Na + UU",
+        "tamil": "நூ"
+    },
+    {
+        "english": "Na + E",
+        "tamil": "நெ"
+    },
+    {
+        "english": "Na + EE",
+        "tamil": "நே"
+    },
+    {
+        "english": "Na + AI",
+        "tamil": "நை"
+    },
+    {
+        "english": "Na + O",
+        "tamil": "நொ"
+    },
+    {
+        "english": "Na + OO",
+        "tamil": "நோ"
+    },
+    {
+        "english": "Na + AU",
+        "tamil": "நௌ"
+    },
+    {
+        "english": "Pa",
+        "tamil": "ப"
+    },
+    {
+        "english": "Pa + A",
+        "tamil": "பா"
+    },
+    {
+        "english": "Pa + I",
+        "tamil": "பி"
+    },
+    {
+        "english": "Pa + II",
+        "tamil": "பீ"
+    },
+    {
+        "english": "Pa + U",
+        "tamil": "பு"
+    },
+    {
+        "english": "Pa + UU",
+        "tamil": "பூ"
+    },
+    {
+        "english": "Pa + E",
+        "tamil": "பெ"
+    },
+    {
+        "english": "Pa + EE",
+        "tamil": "பே"
+    },
+    {
+        "english": "Pa + AI",
+        "tamil": "பை"
+    },
+    {
+        "english": "Pa + O",
+        "tamil": "பொ"
+    },
+    {
+        "english": "Pa + OO",
+        "tamil": "போ"
+    },
+    {
+        "english": "Pa + AU",
+        "tamil": "பௌ"
+    },
+    {
+        "english": "Ma",
+        "tamil": "ம"
+    },
+    {
+        "english": "Ma + A",
+        "tamil": "மா"
+    },
+    {
+        "english": "Ma + I",
+        "tamil": "மி"
+    },
+    {
+        "english": "Ma + II",
+        "tamil": "மீ"
+    },
+    {
+        "english": "Ma + U",
+        "tamil": "மு"
+    },
+    {
+        "english": "Ma + UU",
+        "tamil": "மூ"
+    },
+    {
+        "english": "Ma + E",
+        "tamil": "மெ"
+    },
+    {
+        "english": "Ma + EE",
+        "tamil": "மே"
+    },
+    {
+        "english": "Ma + AI",
+        "tamil": "மை"
+    },
+    {
+        "english": "Ma + O",
+        "tamil": "மொ"
+    },
+    {
+        "english": "Ma + OO",
+        "tamil": "மோ"
+    },
+    {
+        "english": "Ma + AU",
+        "tamil": "மௌ"
+    },
+    {
+        "english": "Ya",
+        "tamil": "ய"
+    },
+    {
+        "english": "Ya + A",
+        "tamil": "யா"
+    },
+    {
+        "english": "Ya + I",
+        "tamil": "யி"
+    },
+    {
+        "english": "Ya + II",
+        "tamil": "யீ"
+    },
+    {
+        "english": "Ya + U",
+        "tamil": "யு"
+    },
+    {
+        "english": "Ya + UU",
+        "tamil": "யூ"
+    },
+    {
+        "english": "Ya + E",
+        "tamil": "யெ"
+    },
+    {
+        "english": "Ya + EE",
+        "tamil": "யே"
+    },
+    {
+        "english": "Ya + AI",
+        "tamil": "யை"
+    },
+    {
+        "english": "Ya + O",
+        "tamil": "யொ"
+    },
+    {
+        "english": "Ya + OO",
+        "tamil": "யோ"
+    },
+    {
+        "english": "Ya + AU",
+        "tamil": "யௌ"
+    },
+    {
+        "english": "Ra",
+        "tamil": "ர"
+    },
+    {
+        "english": "Ra + A",
+        "tamil": "ரா"
+    },
+    {
+        "english": "Ra + I",
+        "tamil": "ரி"
+    },
+    {
+        "english": "Ra + II",
+        "tamil": "ரீ"
+    },
+    {
+        "english": "Ra + U",
+        "tamil": "ரு"
+    },
+    {
+        "english": "Ra + UU",
+        "tamil": "ரூ"
+    },
+    {
+        "english": "Ra + E",
+        "tamil": "ரெ"
+    },
+    {
+        "english": "Ra + EE",
+        "tamil": "ரே"
+    },
+    {
+        "english": "Ra + AI",
+        "tamil": "ரை"
+    },
+    {
+        "english": "Ra + O",
+        "tamil": "ரொ"
+    },
+    {
+        "english": "Ra + OO",
+        "tamil": "ரோ"
+    },
+    {
+        "english": "Ra + AU",
+        "tamil": "ரௌ"
+    },
+    {
+        "english": "La",
+        "tamil": "ல"
+    },
+    {
+        "english": "La + A",
+        "tamil": "லா"
+    },
+    {
+        "english": "La + I",
+        "tamil": "லி"
+    },
+    {
+        "english": "La + II",
+        "tamil": "லீ"
+    },
+    {
+        "english": "La + U",
+        "tamil": "லு"
+    },
+    {
+        "english": "La + UU",
+        "tamil": "லூ"
+    },
+    {
+        "english": "La + E",
+        "tamil": "லெ"
+    },
+    {
+        "english": "La + EE",
+        "tamil": "லே"
+    },
+    {
+        "english": "La + AI",
+        "tamil": "லை"
+    },
+    {
+        "english": "La + O",
+        "tamil": "லொ"
+    },
+    {
+        "english": "La + OO",
+        "tamil": "லோ"
+    },
+    {
+        "english": "La + AU",
+        "tamil": "லௌ"
+    },
+    {
+        "english": "Va",
+        "tamil": "வ"
+    },
+    {
+        "english": "Va + A",
+        "tamil": "வா"
+    },
+    {
+        "english": "Va + I",
+        "tamil": "வி"
+    },
+    {
+        "english": "Va + II",
+        "tamil": "வீ"
+    },
+    {
+        "english": "Va + U",
+        "tamil": "வு"
+    },
+    {
+        "english": "Va + UU",
+        "tamil": "வூ"
+    },
+    {
+        "english": "Va + E",
+        "tamil": "வெ"
+    },
+    {
+        "english": "Va + EE",
+        "tamil": "வே"
+    },
+    {
+        "english": "Va + AI",
+        "tamil": "வை"
+    },
+    {
+        "english": "Va + O",
+        "tamil": "வொ"
+    },
+    {
+        "english": "Va + OO",
+        "tamil": "வோ"
+    },
+    {
+        "english": "Va + AU",
+        "tamil": "வௌ"
+    },
+    {
+        "english": "Zha",
+        "tamil": "ழ"
+    },
+    {
+        "english": "Zha + A",
+        "tamil": "ழா"
+    },
+    {
+        "english": "Zha + I",
+        "tamil": "ழி"
+    },
+    {
+        "english": "Zha + II",
+        "tamil": "ழீ"
+    },
+    {
+        "english": "Zha + U",
+        "tamil": "ழு"
+    },
+    {
+        "english": "Zha + UU",
+        "tamil": "ழூ"
+    },
+    {
+        "english": "Zha + E",
+        "tamil": "ழெ"
+    },
+    {
+        "english": "Zha + EE",
+        "tamil": "ழே"
+    },
+    {
+        "english": "Zha + AI",
+        "tamil": "ழை"
+    },
+    {
+        "english": "Zha + O",
+        "tamil": "ழொ"
+    },
+    {
+        "english": "Zha + OO",
+        "tamil": "ழோ"
+    },
+    {
+        "english": "Zha + AU",
+        "tamil": "ழௌ"
+    },
+    {
+        "english": "Ḷa",
+        "tamil": "ள"
+    },
+    {
+        "english": "Ḷa + A",
+        "tamil": "ளா"
+    },
+    {
+        "english": "Ḷa + I",
+        "tamil": "ளி"
+    },
+    {
+        "english": "Ḷa + II",
+        "tamil": "ளீ"
+    },
+    {
+        "english": "Ḷa + U",
+        "tamil": "ளு"
+    },
+    {
+        "english": "Ḷa + UU",
+        "tamil": "ளூ"
+    },
+    {
+        "english": "Ḷa + E",
+        "tamil": "ளெ"
+    },
+    {
+        "english": "Ḷa + EE",
+        "tamil": "ளே"
+    },
+    {
+        "english": "Ḷa + AI",
+        "tamil": "ளை"
+    },
+    {
+        "english": "Ḷa + O",
+        "tamil": "ளொ"
+    },
+    {
+        "english": "Ḷa + OO",
+        "tamil": "ளோ"
+    },
+    {
+        "english": "Ḷa + AU",
+        "tamil": "ளௌ"
+    },
+    {
+        "english": "Ṭa",
+        "tamil": "ற"
+    },
+    {
+        "english": "Ṭa + A",
+        "tamil": "றா"
+    },
+    {
+        "english": "Ṭa + I",
+        "tamil": "றி"
+    },
+    {
+        "english": "Ṭa + II",
+        "tamil": "றீ"
+    },
+    {
+        "english": "Ṭa + U",
+        "tamil": "று"
+    },
+    {
+        "english": "Ṭa + UU",
+        "tamil": "றூ"
+    },
+    {
+        "english": "Ṭa + E",
+        "tamil": "றெ"
+    },
+    {
+        "english": "Ṭa + EE",
+        "tamil": "றே"
+    },
+    {
+        "english": "Ṭa + AI",
+        "tamil": "றை"
+    },
+    {
+        "english": "Ṭa + O",
+        "tamil": "றொ"
+    },
+    {
+        "english": "Ṭa + OO",
+        "tamil": "றோ"
+    },
+    {
+        "english": "Ṭa + AU",
+        "tamil": "றௌ"
+    },
+    {
+        "english": "Ṇa",
+        "tamil": "ன"
+    },
+    {
+        "english": "Ṇa + A",
+        "tamil": "னா"
+    },
+    {
+        "english": "Ṇa + I",
+        "tamil": "னி"
+    },
+    {
+        "english": "Ṇa + II",
+        "tamil": "னீ"
+    },
+    {
+        "english": "Ṇa + U",
+        "tamil": "னு"
+    },
+    {
+        "english": "Ṇa + UU",
+        "tamil": "னூ"
+    },
+    {
+        "english": "Ṇa + E",
+        "tamil": "னெ"
+    },
+    {
+        "english": "Ṇa + EE",
+        "tamil": "னே"
+    },
+    {
+        "english": "Ṇa + AI",
+        "tamil": "னை"
+    },
+    {
+        "english": "Ṇa + O",
+        "tamil": "னொ"
+    },
+    {
+        "english": "Ṇa + OO",
+        "tamil": "னோ"
+    },
+    {
+        "english": "Ṇa + AU",
+        "tamil": "னௌ"
+    }
+]

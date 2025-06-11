@@ -1,0 +1,51 @@
+{
+    "time": {
+        "o_clock": {
+            "one_o_clock": "(1:00) ஒரு மணி",
+            "two_o_clock": "(2:00) இரண்டு மணி",
+            "eleven_o_clock": "(11:00) பதினொன்று மணி"
+        },
+        "quarter": {
+            "quarter_past": "கால்(kal)",
+            "three_quarters_past": "முக்கால்(mukkal)"
+        },
+        "half_past": "அரை",
+        "exact_time": {
+            "example_1": "12:40 (பன்னிரண்டு மணி நாற்பது நிமிடம்)",
+            "example_2": "1:20 (ஒரு மணி இருபது நிமிடம்)"
+        },
+        "minute": "நிமிடம்"
+    },
+    "days_of_week": {
+        "days": [
+            {
+                "name": "Sunday",
+                "with_suffix": "ஞாயிற்றுக்கிழமை(nyatrukalamai)"
+            },
+            {
+                "name": "Monday",
+                "with_suffix": "திங்கட்கிழமை(thingakalamai)"
+            },
+            {
+                "name": "Tuesday",
+                "with_suffix": "செவ்வாய்க்கிழமை(sevaaikalamai)"
+            },
+            {
+                "name": "Wednesday",
+                "with_suffix": "புதன்கிழமை(budhankalamai)"
+            },
+            {
+                "name": "Thursday",
+                "with_suffix": "வியாழக்கிழமை(vyalakalamai)"
+            },
+            {
+                "name": "Friday",
+                "with_suffix": "வெள்ளிக்கிழமை(vellikalamai)"
+            },
+            {
+                "name": "Saturday",
+                "with_suffix": "சனிக்கிழமை(sanikalamai)"
+            }
+        ]
+    }
+}
